@@ -6,10 +6,10 @@ public class AddressBook {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BuddyInfo b = new BuddyInfo("Weihong Shen", "Carleton", "613");
-		AddressBook a = new AddressBook();
-		a.addBuddy(b);
-		a.removeBuddy(0);
+		BuddyInfo buddy = new BuddyInfo("Weihong Shen", "Carleton", "613");
+		AddressBook address = new AddressBook();
+		address.addBuddy(buddy);
+		address.removeBuddy(0);
 	}
 	
 	public AddressBook() {
