@@ -8,6 +8,7 @@ public class AddressBook {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Hahahahahahahahahahahahaha
+		//Hahahahahahahahahahahahaha
 		BuddyInfo buddy = new BuddyInfo("Weihong Shen", "Carleton", "613");
 		AddressBook address = new AddressBook();
 		address.addBuddy(buddy);
