@@ -1,11 +1,13 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class AddressBook {
 	
-	ArrayList<BuddyInfo> buddyinfo;
+	private List<BuddyInfo> buddyinfo;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//Hahahahahahahahahahahahaha
 		BuddyInfo buddy = new BuddyInfo("Weihong Shen", "Carleton", "613");
 		AddressBook address = new AddressBook();
 		address.addBuddy(buddy);
@@ -13,19 +15,20 @@ public class AddressBook {
 	}
 	
 	public AddressBook() {
-		buddyinfo = new ArrayList<BuddyInfo>();
+		this.buddyinfo = new ArrayList<BuddyInfo>();
 	}
 	
 	public void addBuddy(BuddyInfo a) {
 		if(a != null) {
-			buddyinfo.add(a);
+			this.buddyinfo.add(a);
 		}
 	}
 	
-	public void removeBuddy(int index) {
-		if(index >=0 && index < buddyinfo.size()) {
-			buddyinfo.remove(index);
+	public BuddyInfo removeBuddy(int index) {
+		if(index >=0 && index < this.buddyinfo.size()) {
+			return this.buddyinfo.remove(index);
 		}
+		return null;
 	}
 
 }
